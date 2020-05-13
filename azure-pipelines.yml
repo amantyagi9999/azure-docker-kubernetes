@@ -27,4 +27,4 @@ stages:
         repository: 'amantyagi431/azure-devops-docker'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: '$(tag)'
+        tags: 'latest'
