@@ -2,6 +2,7 @@
 
 Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplicationH2 as a Java Application.
 
+## test step
 ## Resources
 
 - http://localhost:8000/currency-exchange/from/USD/to/INR
