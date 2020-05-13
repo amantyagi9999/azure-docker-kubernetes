@@ -27,6 +27,11 @@ public class CurrencyExchangeController {
 	public String imHealthy() {
 		return "{healthy:true}";
 	}
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Welcome on Docker Azure App";
+	}
 
 	//http://localhost:8000/currency-exchange/from/USD/to/INR
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
