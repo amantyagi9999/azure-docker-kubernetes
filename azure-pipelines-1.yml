@@ -12,18 +12,3 @@ pool:
 steps:
 - script: k8s terraform azure!
   displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml- task: TerraformCLI@0
-  inputs:
-    command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
-    backendType: 'azurerm'
-    backendServiceArm: 'Free Trial (9294610f-e336-45ca-a512-3564dd9d7c83)'
-    ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraform-backed-rg'
-    backendAzureRmResourceGroupLocation: 'westeurope'
-    backendAzureRmStorageAccountName: 'storageaccountaman431'
-    backendAzureRmContainerName: 'storageaccountamancontainer'
-    backendAzureRmKey: 'k8s-dev.tfstate'
