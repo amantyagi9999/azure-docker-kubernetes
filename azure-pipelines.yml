@@ -23,8 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
-        containerRegistry: 'docker-hub'
-        repository: 'amantyagi431/azure-devops-docker'
+        containerRegistry: 'Azure Container Registry'
+        repository: 'corespringapp'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: 'latest'
